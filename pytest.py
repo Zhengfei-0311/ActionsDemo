@@ -219,19 +219,12 @@ if __name__ == "__main__":
     accessToken = get_access_token()
     # 接收的用户
     users = config["user"]
-    # 传入地区获取天气信息
-    region_0 = config["region"]
-    weather_0, temp_0, wind_dir_0 = get_weather(region_0)
-    note_ch = config["note_ch"]
-    note_en = config["note_en"]
-    if note_ch == "" and note_en == "":
-        # 获取词霸每日金句
-        note_ch, note_en = get_ciba()
-    # 公众号推送消息
-    for user in users:
-        send_message(user, accessToken, region_0, weather_0, temp_0, wind_dir_0, note_ch, note_en)
 
-    # 传入地区获取天气信息 123
+
+
+    # 传入地区获取天气信息
+    region_0 = "南阳市"
+    weather_0, temp_0, wind_dir_0 = get_weather(region_0)
     region_1 = "鞍山市"
     weather_1, temp_1, wind_dir_1 = get_weather(region_1)
     note_ch = config["note_ch"]
@@ -241,4 +234,4 @@ if __name__ == "__main__":
         note_ch, note_en = get_ciba()
     # 公众号推送消息
     for user in users:
-        send_message(user, accessToken, region_1, weather_1, temp_1, wind_dir_1, note_ch, note_en)
+        send_message(user, accessToken, region_0+"  "+region_1, weather_0+"     "+weather_1, temp_0+"  "+temp_1, wind_dir_0+"  "+wind_dir_1, note_ch, note_en)
