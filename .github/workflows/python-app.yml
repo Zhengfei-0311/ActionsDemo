@@ -4,10 +4,8 @@
 name: Python application
 
 on:
-  # push:
-  # pull_request:
   schedule:
-  - cron: "05 09 * * *"
+    - cron: "08 09 * * *"
 
 
 permissions:
