@@ -3,14 +3,14 @@
 
 name: Python application
 
-# on:
-#   schedule:
-#     - cron: '19 09 * * *'
-
 on:
-  push:
   schedule:
-    - cron: '*/1 * * * *' # 每5分钟一次，测试用
+    - cron: '35 09 * * *'
+
+# on:
+#   push:
+#   schedule:
+#     - cron: '*/1 * * * *' # 每5分钟一次，测试用
 
 # permissions:
 #   contents: read
