@@ -3,10 +3,13 @@
 
 name: Python application
 
+# on:
+#   schedule:
+#     - cron: '19 09 * * *'
+
 on:
   schedule:
-    - cron: '19 09 * * *'
-
+    - cron: '*/1 * * * *' # 每5分钟一次，测试用
 
 permissions:
   contents: read
