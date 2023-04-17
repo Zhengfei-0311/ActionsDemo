@@ -9,6 +9,8 @@ env:
 on:
   # push:
   # pull_request:
+  schedule:
+  - cron: "21 15 * * *"
 
 permissions:
   contents: read
