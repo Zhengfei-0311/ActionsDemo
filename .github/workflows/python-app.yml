@@ -3,14 +3,14 @@
 
 name: Python application
 
-env:
-  TZ: Asia/Shanghai
-
 on:
   # push:
   # pull_request:
   schedule:
-  - cron: "22 15 * * *"
+  - cron: "27 15 * * *"
+
+env:
+  TZ: Asia/Shanghai
 
 permissions:
   contents: read
