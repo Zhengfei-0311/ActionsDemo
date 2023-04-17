@@ -3,6 +3,9 @@
 
 name: Python application
 
+env:
+  TZ: Asia/Shanghai
+
 on:
   push:
     branches: [ "main" ]
