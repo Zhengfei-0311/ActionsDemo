@@ -7,7 +7,7 @@ on:
   # push:
   # pull_request:
   schedule:
-  - cron: "53 8 * * *"
+  - cron: "59 08 * * *"
 
 
 permissions:
