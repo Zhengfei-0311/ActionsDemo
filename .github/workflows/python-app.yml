@@ -7,10 +7,8 @@ on:
   # push:
   # pull_request:
   schedule:
-  - cron: "27 15 * * *"
+  - cron: "33 15 * * * Asia/Shanghai"
 
-env:
-  TZ: Asia/Shanghai
 
 permissions:
   contents: read
